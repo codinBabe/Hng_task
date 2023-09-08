@@ -6,6 +6,6 @@ const Days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", 
 
 day.innerHTML = `Day: ${Days[new Date().getDay()]}`
 function updateTime() {
-    time.innerHTML = `Time: ${new Date().getUTCMilliseconds()}`;
+    time.innerHTML = `Time: ${new Date().getTime()}`;
 };
 setInterval(updateTime, 1000);
